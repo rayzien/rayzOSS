@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rayzOSS"
+version = "1.0.0"
+authors = [
+  { name="rayzien", email="rayzien@users.noreply.github.com" },
+  { name="pheonix14", email="pheonix14@users.noreply.github.com" }
+]
+description = "Distributed sharded filesystem, database architecture, and auto-sync engine using GitHub as a backend"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file="LICENSE" }
+keywords = ["github", "filesystem", "sharding", "database", "backup", "compression"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: System :: Archiving",
+    "Topic :: Database"
+]
+
+[project.scripts]
+oss = "app.main:main"
+
+[project.urls]
+"Homepage" = "https://github.com/rayzien/rayzOSS"
+"Bug Tracker" = "https://github.com/rayzien/rayzOSS/issues"
